@@ -65,6 +65,12 @@ namespace TrashCollector.Models
     public class RegisterViewModel
     {
         [Required]
+        [Display(Name = "Role")]
+        public ApplicationUserManager
+        
+        // .Include when using Foreign Key
+            
+        [Required]
         [EmailAddress]
         [Display(Name = "Email")]
         public string Email { get; set; }
